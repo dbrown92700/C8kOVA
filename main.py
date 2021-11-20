@@ -17,6 +17,7 @@ def writemanifest(ovadir):
                     filename = file[0:len(file)-4]
     manfile = open(f'{ovadir}/{filename}.mf', 'w')
     manfile.write(manifest)
+    print('Manifest File Created')
 
 # Create OVA file with filename using files in outdir
 def tarova(ovadir, outdir, filename):
@@ -27,6 +28,7 @@ def tarova(ovadir, outdir, filename):
         if file[0] != '.':
             outfile.add(f'{ovadir}/{file}', arcname=f'{file}')
     outfile.close()
+    print(f'OVA file {filename}.ova created.\n')
 
 def writeovf(ovadir, outdir, values):
 
@@ -47,13 +49,13 @@ def writeovf(ovadir, outdir, values):
                 keyvalue = values[key]
             except:
                 keyvalue = ''
-            print(line)
             if keyvalue != '':
                 keybegin = line.find('ovf:value="')
                 outline = line[0:keybegin] + 'ovf:value="' + keyvalue + '">\n'
         ovf.write(outline)
     ovf.close()
     format.close()
+    print('OVF file created.')
 
 if __name__ == '__main__':
 

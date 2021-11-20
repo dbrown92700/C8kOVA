@@ -1,0 +1,3 @@
+﻿hostname,login-username,login-password,mgmt-interface,mgmt-ipv4-addr,mgmt-ipv4-gateway,mgmt-ipv4-network,vbond-ipv4-addr,otp,uuid,org
+store9788,admin,Cisco456,GigabitEthernet1,192.168.1.2/24,192.168.1.1,192.168.1.0/24,64.100.2.100,e2dca24f192549fc98a93ddad29f0888,C8K-676ECA72-BBA2-B0FF-B6FA-B3F58E573888,secmob
+store9799,admin,Cisco456,GigabitEthernet1,192.168.1.2/24,192.168.1.1,192.168.1.0/24,64.100.2.100,e2dca24f192549fc98a93ddad29f0888,C8K-676ECA72-BBA2-B0FF-B6FA-B3F58E573888,secmob
